@@ -20,3 +20,16 @@ int main(){
 
 //Do not modify the code above this line
 //Write definition of shuffle() using pointer after this line. 
+
+
+
+  void shuffle(int *a, int *b, int *c, int *d){
+    
+        for(int i = 0; i < 10; i++){
+        int r = rand() % 3;
+        int temp;
+        if(r == 0) { temp = *a; *a = *b; *b = temp; }
+        else if(r == 1) { temp = *b; *b = *c; *c = temp; }
+        else { temp = *c; *c = *d; *d = temp; }
+    }
+}
